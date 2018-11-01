@@ -10,6 +10,11 @@ Printrboard and Modern Marlin
 * 9 Point Auto Bilinear Mesh Bedleving
 * Filament Changing routine now accessable from LCD
 * Custom scrips from LCD for various tasks such as Home/Bedleveing/Preheat
+
+#### Printrbot Play 0.2mm layer height Cura 3.5.1
+![Benchy Play 0.2mm layer height](benchyplayfront.JPG)
+![Benchy Play](benchyplayback.JPG)
+![Benchy Play (benchyplayside.JPG)
     
 ### This isn't your grandmas 3D printer, please make sure your inductive probe is adjusted properly
 
@@ -81,6 +86,9 @@ M117 Printing...
     M43 Debug Pins
     Pin Assignments
     https://labitat.dk/wiki/Panelolu_and_Printrboard_the_easy_way
+    
+    #### Using Printrboard without an LCD - all commands avalible 
+    http://marlinfw.org/docs/features/lcd_menu.html
    
    ## Build Using PlatformIO or Marlin-Config GUI editor
    I find Marlin GUI editor can be very laggy so instead I perfer to access it through Chrome http://localhost:3000https://github.com/akaJes/marlin-config
