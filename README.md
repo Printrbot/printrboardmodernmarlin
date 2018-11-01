@@ -1,7 +1,7 @@
-##Marlin 1.1.9
+## Marlin 1.1.9
 Printrboard and Modern Marlin
 
-#This release is configured for a Printrbot Play with stepper drivers inverted, more releases will come in the following days.
+# This release is configured for a Printrbot Play with stepper drivers inverted, more releases will come in the following days.
     
     9 Point Auto Bilinear Bedleving
     Linear Advance Version 1.5 Greatly Improves Print Quality, Resolution and Speed
@@ -23,7 +23,7 @@ Linear Advance is enabled by default
     Please calibrate your K-factor and submit results 
     http://marlinfw.org/tools/lin_advance/k-factor.html
 
-#Babystepping
+# Babystepping
     M290 and LCD menu items to move the axes by tiny increments without changing the current position values. 
     This feature is used primarily to adjust the Z axis in the first layer of a print in real-time. Warning: Does not respect endstops!
     This replaces the need to set the Z offset using M212
@@ -40,7 +40,7 @@ LCD semi-tested
     SD Card Support on the LCD is dissabled as of right now marlin has exactly engouh memory to fit on the AT90 128
 
 
-#Start gCode
+# Start gCode
     G90
     G28
     G29
