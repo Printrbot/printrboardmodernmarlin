@@ -12,9 +12,8 @@ Printrboard and Modern Marlin
 * Custom scrips from LCD for various tasks such as Home/Bedleveing/Preheat
 
 #### Printrbot Play 0.2mm layer height Cura 3.5.1
-![Benchy Play 0.2mm layer height](benchyplayfront.JPG)
-![Benchy Play](benchyplayback.JPG)
-![Benchy Play (benchyplayside.JPG)
+![Benchy Play 0.2mm layer height](benchythumbnail.JPG)
+
     
 ### This isn't your grandmas 3D printer, please make sure your inductive probe is adjusted properly
 
