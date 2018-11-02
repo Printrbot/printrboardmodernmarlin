@@ -1,10 +1,10 @@
 ## Marlin 1.1.9
 Printrboard and Modern Marlin
 
-### This release is configured for a Printrbot Play with stepper drivers inverted, more releases will come in the following days.
+### Tested Release For Heated and Non-Heated Bed Models
 #### Highlights
     
-   This firmware upgrade will increase print quality to a level comparible with Prusa Mk3 or Ultimaker 3 
+* This firmware upgrade increases print quality to a level comparible with Prusa Mk3 or Ultimaker 3 
    all thanks to Linear Advance Version 1.5 which became avalible with marlin 1.1.9
 * Babystepping allows live z offset during the start of the print
 * 9 Point Auto Bilinear Mesh Bedleving
@@ -16,11 +16,26 @@ Printrboard and Modern Marlin
 
     
 #### This isn't your grandmas 3D printer, please make sure your inductive probe is adjusted properly
+* This firmware should be universal for any printrbot, just choose heated bed firmware if you have that option.
+* You will need to update the steps/mm for your machine [Avaliable here](https://github.com/Printrbot/Printr-Configs)
+* Depending on the model of your printer you will need to adjust the Stepper current
 
-* Cold End Fan not tested E0_Auto_Fan mapped to Pin 22 - will get to this asap
-   
-Machine Definition can be updated using gCode
-    Current Steps M92 X80 Y80 Z2020 E94.5
+    Steps M92 X80 Y80 Z2020 E94.5
+
+* Set Stepper Current for your Printer
+
+    M909
+    READ: echo:Stepper current values in % (Amps):
+    Stepper current values in % (Amps):
+    READ: echo: X:60.00 (16581.82) Y:65.00 (36581.82) Z:60.00 (16581.82) E:65.00 (36581.82)
+    X:60.00 (16581.82) Y:65.00 (36581.82) Z:60.00 (16581.82) E:65.00 (36581.82)
+
+Example: M907 X60 sets the X-axis motor current to 60% of max possible
+
+    M909 Read Motor current Values
+    M907 Set Current Value
+    M910 Store Stepper Current Values
+
 	
 ### Linear Advance is enabled by default
     Retraction distance should be limited to 0.7mm
@@ -30,18 +45,18 @@ Machine Definition can be updated using gCode
     M500 ;save
     Play with MK8 style extruder Use a K0.05
  
-   Calibrate your extruder steps/mm before K-factor
+   * Calibrate your extruder steps/mm before K-factor
     [Extruder Calibration](http://3daddict.com/3d-printer-extruder-calibration-steps/)
     
-   Please calibrate your K-factor and share results, 
-    Each material and color has it's own properties for best results caibrate for each material you use.
+   * Please calibrate your K-factor and share results, 
+    * Each material and color has it's own properties for best results caibrate for each material you use.
     Add the K value to your start gCode for each material
     [Linear Advance gcode Geneartor](http://marlinfw.org/tools/lin_advance/k-factor.html)
 
 ### Babystepping
-   M290 and LCD menu items to move the axes by tiny increments without changing the current position values. 
+   * M290 and LCD menu items to move the axes by tiny increments without changing the current position values. 
     This feature is used primarily to adjust the Z axis in the first layer of a print in real-time. Warning: Does not respect endstops!
-    This replaces the need to set the Z offset using M212
+    * This replaces the need to set the Z offset using M212
     
 #### babystepping can be adjusted while printing over usb - no LCD required
 Joging the z axis down or up in incriments of 0.1mm while printing adjusts the nozzle offset
