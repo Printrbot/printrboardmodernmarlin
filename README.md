@@ -3,13 +3,18 @@ Printrboard and Modern Marlin
 
 ### Tested Release For Heated and Non-Heated Bed Models
 #### Highlights
-    
+
+
 * This firmware upgrade increases print quality to a level comparible with Prusa Mk3 or Ultimaker 3 
    all thanks to Linear Advance Version 1.5 which became avalible with marlin 1.1.9
 * Babystepping allows live z offset during the start of the print
 * 9 Point Auto Bilinear Mesh Bedleving
 * Filament Changing routine now accessable from LCD
 * Custom scrips from LCD for various tasks such as Home/Bedleveing/Preheat
+* 3 Point Leveling seems to work better for smaller beds
+* Bilinear Bed Leveling which is usefull for larger unveven beds
+* NeoPixel Printer status via EXP2 Header -Printrbot Neopixel is BRG
+* FAN Software PWM control - gets rid of high pitch noise
 
 #### Printrbot Play 0.2mm layer height Cura 3.5.1
 ![Benchy Play 0.2mm layer height](benchythumbnail.JPG)
@@ -20,7 +25,7 @@ Printrboard and Modern Marlin
 * You will need to update the steps/mm for your machine [Avaliable here](https://github.com/Printrbot/Printr-Configs)
 * Depending on the model of your printer you will need to adjust the Stepper current
 
-    Steps M92 X80 Y80 Z2020 E94.5
+    Steps M92 X80 Y80 Z2020 E94
 
 * Set Stepper Current for your Printer
 
@@ -100,7 +105,15 @@ M117 Printing...
     M43 Debug Pins
     
    [Pin Assignments](https://labitat.dk/wiki/Panelolu_and_Printrboard_the_easy_way)
-    
+
+   [Expansion Header pinout diagrams](http://blog.think3dprint3d.com/2012/07/panelolu-with-printrboard.html)
+  
+  Neopixel Pins
+![pins](neopixel_pinout.JPG)
+
+EXP2 Pinout
+![pins2](Printrboard-pinout-EXP2.jpg)
+
    Using Printrboard without an LCD - all commands avalible 
    [LCD Menu gcode equivelent](http://marlinfw.org/docs/features/lcd_menu.html)
    
