@@ -16,6 +16,8 @@ Printrboard and Modern Marlin
 * NeoPixel Printer status via EXP2 Header -Printrbot Neopixel is BRG
 * FAN Software PWM control - gets rid of high pitch noise
 
+[Marlin 1.1.9 first time bed leveling guide - after flashing](http://marlinfw.org/docs/features/auto_bed_leveling.html#first-time-bed-leveling)
+
 #### Printrbot Play 0.2mm layer height Cura 3.5.1
 ![Benchy Play 0.2mm layer height](benchythumbnail.JPG)
 
@@ -80,20 +82,19 @@ Zoffset can also be set using M815 but is not completely nessary
 
 ### Start gCode
 
-M82 ;absolute extrusion mode
-G21 ;metric values
-G90 ;absolute positioning
-M82 ;set extruder to absolute mode
-G28 ;move X/Y to min endstops
-G29 ;run auto bed leveling
-G1 Z.2 X50 F9000 ;move the platform down 15mm
-G92 E0 ;zero the extruded length
-G1 X0 E50 F800 E50 ;extrude 10mm of feed stock
-G1 Y95 Z0 ; wipe nozzle
-G92 E0 ;zero the extruded length again
-G1 F9000
-;Put printing message on LCD screen
-M117 Printing...
+	M82 ;absolute extrusion mode
+	G21 ;metric values
+	G90 ;absolute positioning
+	M82 ;set extruder to absolute mode
+	G28 ;move X/Y to min endstops
+	G29 ;run auto bed leveling
+	G92 E0 ;zero the extruded length
+	G1 X0 Y0 Z.2 F7000 ;move to front corner and lower 
+	G1 X35 Z.2 E35 F800 ;purge 35mm of filament
+	G92 E0 ;zero the extruded length again
+	G1 F9000
+	;Put printing message on LCD screen
+	M117 Printing...
 
 ### Usefull gCode
     M420 S1 ;loads previous bed leving matrix
