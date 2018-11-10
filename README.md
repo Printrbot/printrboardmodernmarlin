@@ -14,7 +14,11 @@ Printrboard and Modern Marlin
 * 3 Point Leveling seems to work better for smaller beds
 * Bilinear Bed Leveling which is usefull for larger unveven beds
 * NeoPixel Printer status via EXP2 Header -Printrbot Neopixel is BRG
-* FAN Software PWM control - gets rid of high pitch noise
+
+##### Change Log
+
+v0.3 Software Fan PWM dissabled - caused major decrease in print quality
+v0.2 Software FAN PWM enabled to silence squeeky fans
 
 [Marlin 1.1.9 first time bed leveling guide - after flashing](http://marlinfw.org/docs/features/auto_bed_leveling.html#first-time-bed-leveling)
 
@@ -79,6 +83,16 @@ Zoffset can also be set using M815 but is not completely nessary
     Custom User Menu Scripts
     Enabled LCD Support for Ultipanel and Ultra_lcd
     SD Card Support on the LCD is dissabled as of right now marlin has exactly engouh memory to fit on the AT90 128
+
+
+#### PID
+READ:  Classic PID 
+READ:  Kp: 35.79 Ki: 7.05 Kd: 45.44
+READ: PID Autotune finished! Put the last Kp, Ki and Kd constants from below into Configuration.h
+READ: #define DEFAULT_Kp 35.79
+READ: #define DEFAULT_Ki 7.05
+READ: #define DEFAULT_Kd 45.44
+
 
 ### Start gCode
 
