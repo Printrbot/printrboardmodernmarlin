@@ -55,17 +55,17 @@ Printrboard and Modern Marlin
     [Extruder Calibration](http://3daddict.com/3d-printer-extruder-calibration-steps/)
     
    * Please calibrate your K-factor and share results, 
-    * Each material and color has it's own properties for best results caibrate for each material you use.
+   * Each material and color has it's own properties for best results caibrate for each material you use.
     Add the K value to your start gCode for each material
     [Linear Advance gcode Geneartor](http://marlinfw.org/tools/lin_advance/k-factor.html)
 
 ##### Babystepping
-   * M290 and LCD menu items to move the axes by tiny increments without changing the current position values. 
-    This feature is used primarily to adjust the Z axis in the first layer of a print in real-time. Warning: Does not respect endstops!
-    * This replaces the need to set the Z offset using M212
+* M290 and LCD menu items to move the axes by tiny increments without changing the current position values. This feature is used primarily to adjust the Z axis in the first layer of a print in real-time.
+    * Replaces the need to set the Z offset using M212
 
 ##### Z-Offset Adjusemt while printing
-Enter the incriment you wish to move, send the command repeately
+
+    Enter the incriment you wish to move, send the command repeately
     M290 Z0.01 ;moves away from build plate
     M290 Z-0.01 ;moves towards the build plate
 
