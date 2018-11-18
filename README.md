@@ -13,7 +13,8 @@ Printrboard and Modern Marlin
 * Bilinear Bed Leveling which is usefull for larger unveven beds
 
 ##### Change Log
-    V0.4 LCD and SD card support works correctly, fixed other bugs
+    v0.5 bugs have been worked out for Play RevF, RevD and older
+    v0.4 LCD and SD card support works correctly, fixed other bugs
     v0.3 Software Fan PWM dissabled - caused major decrease in print quality
     v0.2 Software FAN PWM enabled to silence squeeky fans
 
