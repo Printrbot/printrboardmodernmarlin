@@ -66,7 +66,7 @@ Printrboard and Modern Marlin
 
 ##### Z-Offset Adjusemt while printing
 
-    Enter the incriment you wish to move, send the command repeately
+    Enter the increment you wish to move, send the command repeatedly
     M290 Z0.01 ;moves away from build plate
     M290 Z-0.01 ;moves towards the build plate
 
@@ -97,9 +97,9 @@ Printrboard and Modern Marlin
 
 ##### Usefull gCode
     M420 S1 ;loads previous bed leving matrix
-    M900 K0 ;dissables Linear Advance
+    M900 K0 ;disables Linear Advance
     M900 K0.5 ;Set linear advance K-value
-    M290 Z0.02 ; babystep move up 0.02mm on the Z axis 
+    M290 Z0.02 ;babystep move up 0.02mm on the Z axis 
     
     M115 Feature support list
     M43 Debug Pins
