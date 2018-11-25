@@ -5,18 +5,18 @@ Printrboard and Modern Marlin
 #### Highlights
 
 
-* This firmware upgrade increases print quality to a level comparible with Prusa Mk3 or Ultimaker 3 
-   all thanks to Linear Advance Version 1.5 which became avalible with marlin 1.1.9
-* Babystepping allows live z offset during the start of the print
-* Custom scrips from LCD for various tasks such as Home/Bedleveing/Preheat
+* This firmware upgrade increases print quality to a level comparable with Prusa Mk3 and Ultimaker 3 all thanks to Linear Advance v1.5 available starting with Marlin 1.1.9
+* Babystepping allows live Z-offset during the start of the print
+* Size optimized for 128k storage of AT90USB1286 processor
 * 3 Point Leveling seems to work better for smaller beds
-* Bilinear Bed Leveling which is usefull for larger unveven beds
+* Bilinear Bed Leveling which is useful for larger uneven beds
 
 ##### Change Log
+    v0.6 Smalls with Heated bed 200x150x150 no lcd
     v0.5 bugs have been worked out for Play RevF, RevD and older
     v0.4 LCD and SD card support works correctly, fixed other bugs
-    v0.3 Software Fan PWM dissabled - caused major decrease in print quality
-    v0.2 Software FAN PWM enabled to silence squeeky fans
+    v0.3 Software Fan PWM disabled - caused major decrease in print quality
+    v0.2 Software FAN PWM enabled to silence squeaky fans
 
 [Marlin 1.1.9 first time bed leveling guide - after flashing](http://marlinfw.org/docs/features/auto_bed_leveling.html#first-time-bed-leveling)
 
@@ -24,7 +24,7 @@ Printrboard and Modern Marlin
 ![Benchy Play 0.2mm layer height](benchythumbnail.JPG)
 
     
-##### This isn't your grandmas 3D printer, please make sure your inductive probe is adjusted properly
+##### This isn't your grandma's 3D printer, please make sure your inductive probe is adjusted properly
 * This firmware should be universal for any printrbot, just choose heated bed firmware if you have that option.
 * You will need to update the steps/mm for your machine 
 [Settings for your Printer Smalls, Simple, Play Plus](https://docs.google.com/spreadsheets/d/1FntcZTm4M7FzUf9ej9DEmRYf1LaH76J8TU3VzK3Ox8g/pubhtml)
@@ -46,7 +46,7 @@ Printrboard and Modern Marlin
 	
 ##### Linear Advance is enabled by default
     Retraction distance should be limited to 0.7mm
-    Default vaule is K0.08 Be sure to calibrate your extruder before a
+    Default value is K0.08 Be sure to calibrate your extruder before a
     This can be adjusted while printing
     M900 K0.08 ;set k value
     M500 ;save
@@ -56,7 +56,7 @@ Printrboard and Modern Marlin
     [Extruder Calibration](http://3daddict.com/3d-printer-extruder-calibration-steps/)
     
    * Please calibrate your K-factor and share results, 
-   * Each material and color has it's own properties for best results caibrate for each material you use.
+   * Each material and color has its own properties for best results calibrate for each material you use.
     Add the K value to your start gCode for each material
     [Linear Advance gcode Geneartor](http://marlinfw.org/tools/lin_advance/k-factor.html)
 
@@ -64,7 +64,7 @@ Printrboard and Modern Marlin
 * M290 and LCD menu items to move the axes by tiny increments without changing the current position values. This feature is used primarily to adjust the Z axis in the first layer of a print in real-time.
     * Replaces the need to set the Z offset using M212
 
-##### Z-Offset Adjusemt while printing
+##### Z-Offset Adjustment while printing
 
     Enter the increment you wish to move, send the command repeatedly
     M290 Z0.01 ;moves away from build plate
@@ -76,7 +76,7 @@ Printrboard and Modern Marlin
     
 ##### LCD & SD Card
     LCD Support for Reprap_Discount_LCD, Ultipanel and Ultra_lcd
-    SD Card reader intergrated in LCD countroler should work
+    SD Card reader integrated in LCD controller should work
 
 
 ##### Start gCode
@@ -95,8 +95,8 @@ Printrboard and Modern Marlin
 	;Put printing message on LCD screen
 	M117 Printing...
 
-##### Usefull gCode
-    M420 S1 ;loads previous bed leving matrix
+##### Useful gCode
+    M420 S1 ;loads previous bed leveling matrix
     M900 K0 ;disables Linear Advance
     M900 K0.5 ;Set linear advance K-value
     M290 Z0.02 ;babystep move up 0.02mm on the Z axis 
@@ -114,11 +114,11 @@ Printrboard and Modern Marlin
 EXP2 Pinout
 ![pins2](Printrboard-pinout-EXP2.jpg)
 
-   Using Printrboard without an LCD - all commands avalible 
-   [LCD Menu gcode equivelent](http://marlinfw.org/docs/features/lcd_menu.html)
+   Using Printrboard without an LCD - all commands available 
+   [LCD Menu gcode equivalent](http://marlinfw.org/docs/features/lcd_menu.html)
    
    ##### Build Using PlatformIO or Marlin-Config GUI editor
-   I find Marlin GUI editor can be very laggy so instead I perfer to access it through Chrome
+   I find Marlin GUI editor can be very laggy so instead I prefer to access it through Chrome
    
     http://localhost:3000
    
