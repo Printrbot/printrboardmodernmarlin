@@ -132,3 +132,11 @@ EXP2 Pinout
    
    ##### Guide
    [Firmware Loading Guide](https://reprap.org/wiki/Printrboard#Loading_Firmware_.28Windows.29)
+   
+   ##### Programming firmware without a bootloader
+Caution! Don't even mess with this if you don't know what you're doing!
+DFU bootloader uses 6k of program memory, inorder to get more features in limited space I choose to program firmware using a USBtinyISP
+[More information](https://reprap.org/wiki/Printrboard#Installing_A_Bootloader)
+     	
+	avrdude -c usbtiny -p at90usb1286 -U flash:w:FirmwareHexFileNameHere.hex:i
+
