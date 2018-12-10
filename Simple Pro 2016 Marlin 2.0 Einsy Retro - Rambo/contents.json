@@ -1,0 +1,9 @@
+{
+  "to": "C:\\Users\\Dell\\Documents\\MarlinGUI\\Printrbot SM2\\Marlin\\.mct.bak\\origin\\bugfix-2.0.x\\2018-11-13 02-26-07",
+  "root": "C:/Users/Dell/Documents/MarlinGUI/Printrbot SM2/Marlin",
+  "files": [
+    "C:\\Users\\Dell\\Documents\\MarlinGUI\\Printrbot SM2\\Marlin\\Marlin\\Configuration.h",
+    "C:\\Users\\Dell\\Documents\\MarlinGUI\\Printrbot SM2\\Marlin\\Marlin\\Configuration_adv.h"
+  ],
+  "message": "Rsense Set to .22\nHybrid Thereashold 45"
+}
