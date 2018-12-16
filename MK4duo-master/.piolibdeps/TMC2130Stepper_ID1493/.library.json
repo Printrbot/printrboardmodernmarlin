@@ -1,0 +1,41 @@
+{
+    "name": "TMC2130Stepper", 
+    "version": "2.5.0", 
+    "keywords": [
+        "device", 
+        "control"
+    ], 
+    "description": "Arduino library for Trinamic TMC2130 stepper drivers", 
+    "frameworks": [
+        "arduino"
+    ], 
+    "platforms": [
+        "atmelavr", 
+        "atmelsam"
+    ], 
+    "authors": [
+        {
+            "email": null, 
+            "url": null, 
+            "maintainer": true, 
+            "name": "teemuatlut"
+        }
+    ], 
+    "repository": {
+        "type": "git", 
+        "url": "https://github.com/teemuatlut/TMC2130Stepper"
+    }, 
+    "homepage": null, 
+    "export": {
+        "include": null, 
+        "exclude": [
+            "extras", 
+            "docs", 
+            "tests", 
+            "test", 
+            "*.doxyfile", 
+            "*.pdf"
+        ]
+    }, 
+    "id": 1493
+}

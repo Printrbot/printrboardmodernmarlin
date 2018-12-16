@@ -1,9 +1,0 @@
-{
-  "to": "C:\\Users\\Philip\\Documents\\MarlinGUI\\PB\\Marlin\\.mct.bak\\tags\\1.1.9\\2018-11-10 13-18-55",
-  "root": "C:/Users/Philip/Documents/MarlinGUI/PB/Marlin",
-  "files": [
-    "C:\\Users\\Philip\\Documents\\MarlinGUI\\PB\\Marlin\\Marlin\\Configuration.h",
-    "C:\\Users\\Philip\\Documents\\MarlinGUI\\PB\\Marlin\\Marlin\\Configuration_adv.h"
-  ],
-  "message": "Disabled Software Fan PWM due to decrease in print quality\nK Value=0.05"
-}
