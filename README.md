@@ -60,18 +60,19 @@ Printrboard and Modern Marlin
     Add the K value to your start gCode for each material
     [Linear Advance gcode Geneartor](http://marlinfw.org/tools/lin_advance/k-factor.html)
 
-##### Babystepping
-* M290 and LCD menu items to move the axes by tiny increments without changing the current position values. This feature is used primarily to adjust the Z axis in the first layer of a print in real-time.
-    * Replaces the need to set the Z offset using M212
+##### Babystepping Z-Offset adjustment while printing
+* M290 and LCD menu item to move the z axes by tiny increments without changing the current position values. This feature is used primarily to adjust the Z axis in the first layer of a print in real-time.
+    * Replaces the need to set the Z-offset multiple times using M212 before printing.
+    * Easily adjust your offset by adding custom buttons to octoprint using Custom Control Editor Plugin
+   ![customcontrol](customcontroleditor.jpg)
 
-##### Z-Offset Adjustment while printing
-
-    Enter the increment you wish to move, send the command repeatedly
-    M290 Z0.01 ;moves away from build plate
-    M290 Z-0.01 ;moves towards the build plate
+    	 Enter the increment you wish to move, send the command repeatedly
+   	 M290 Z0.01 ;moves away from build plate
+   	 M290 Z-0.01 ;moves towards the build plate
+    
 
 ##### Z-Offset (the old way M212)
-     M815 Z-1.95 ;this is the default value
+     M851 Z-1.95 ;this is the default value
      M500 ;save
     
 ##### LCD & SD Card
