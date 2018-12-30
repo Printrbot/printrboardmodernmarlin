@@ -1,7 +1,7 @@
 ## Marlin 1.1.9
 Printrboard and Modern Marlin
 
-### Semi-Tested Release For Heated and Non-Heated Bed Models
+### Tested Release For Heated and Non-Heated Bed Models
 #### Highlights
 
 
@@ -10,6 +10,17 @@ Printrboard and Modern Marlin
 * Size optimized for 128k storage of AT90USB1286 processor
 * 3 Point Leveling seems to work better for smaller beds
 * Bilinear Bed Leveling which is useful for larger uneven beds
+
+##### Selecting Firmware for your board
+
+The firmware versioning scheme I used to track changes I made caused some confusion, so just to clarify. The firmware version number does not relate to the board version number. There are only two firmware versions that cover all board versions.
+
+If your board is RevF0 - F6 then use RevF firmware.
+If your board is marked anything lower then RevF: Use Firmware Marked RevD, RevB 
+
+	Example
+	Board Version|Firmware Version |Model  |Size   |Notes
+	RevF-          0.6.5_           PlayHB_200x100_Inverted_Probe
 
 ##### Change Log
     v0.6 Smalls with Heated bed 200x150x150 no lcd
