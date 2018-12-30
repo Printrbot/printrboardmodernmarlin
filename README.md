@@ -22,12 +22,18 @@ If your board is marked anything lower then RevF: Use Firmware Marked RevD, RevB
 	Board Version|Firmware Version |Model  |Size   |Notes
 	RevF-          0.6.5_           PlayHB_200x100_Inverted_Probe
 
+
 ##### Change Log
     v0.6 Smalls with Heated bed 200x150x150 no lcd
     v0.5 bugs have been worked out for Play RevF, RevD and older
     v0.4 LCD and SD card support works correctly, fixed other bugs
     v0.3 Software Fan PWM disabled - caused major decrease in print quality
     v0.2 Software FAN PWM enabled to silence squeaky fans
+
+#### More Firmware for other models is avalible below - You will need to compile Marlin 1.1.8
+[http://www.xilka.com/printrbot/marlin/1.1.8/20171227a/](http://www.xilka.com/printrbot/marlin/1.1.8/20171227a/)
+
+
 
 [Marlin 1.1.9 first time bed leveling guide - after flashing](http://marlinfw.org/docs/features/auto_bed_leveling.html#first-time-bed-leveling)
 
