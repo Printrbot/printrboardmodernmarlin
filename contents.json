@@ -1,9 +1,0 @@
-{
-  "to": "C:\\Users\\Philip\\Documents\\MarlinGUI\\PB\\Marlin\\.mct.bak\\tags\\1.1.9\\2018-11-01 01-31-44",
-  "root": "C:/Users/Philip/Documents/MarlinGUI/PB/Marlin",
-  "files": [
-    "C:\\Users\\Philip\\Documents\\MarlinGUI\\PB\\Marlin\\Marlin\\Configuration.h",
-    "C:\\Users\\Philip\\Documents\\MarlinGUI\\PB\\Marlin\\Marlin\\Configuration_adv.h"
-  ],
-  "message": "fan pin set to 37\nz probe script fixed\njerk and accel adjusted"
-}
