@@ -19,7 +19,7 @@ If your board is RevF0 - F6 then use RevF firmware.
 If your board is marked anything lower then RevF: Use Firmware Marked RevD, RevB 
 
 	Example
-	Board Version|Firmware Version |Model  |Size   |Notes
+	Board Version|Firmware Version |Model |Build Size|Notes
 	RevF-          0.6.5_           PlayHB_200x100_Inverted_Probe
 
 
@@ -32,7 +32,6 @@ If your board is marked anything lower then RevF: Use Firmware Marked RevD, RevB
 
 #### More Firmware for other models is avalible below - You will need to compile Marlin 1.1.8
 [http://www.xilka.com/printrbot/marlin/1.1.8/20171227a/](http://www.xilka.com/printrbot/marlin/1.1.8/20171227a/)
-
 
 
 [Marlin 1.1.9 first time bed leveling guide - after flashing](http://marlinfw.org/docs/features/auto_bed_leveling.html#first-time-bed-leveling)
