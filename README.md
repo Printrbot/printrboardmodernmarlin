@@ -20,10 +20,12 @@ If your board is marked anything lower then RevF: Use Firmware Marked RevD, RevB
 
 	Example
 	Board Version|Firmware Version |Model |Build Size|Notes
-	RevF-          0.6.5_           PlayHB_200x100_Inverted_Probe
+	RevF-          0.8_           PlayHB_200x100_Inverted_Probe
 
 
 ##### Change Log
+	
+    v0.8 Added new machines, Neo Pixel, Added E3D Hotends, other small changes
     v0.6 Smalls with Heated bed 200x150x150 no lcd
     v0.5 bugs have been worked out for Play RevF, RevD and older
     v0.4 LCD and SD card support works correctly, fixed other bugs
