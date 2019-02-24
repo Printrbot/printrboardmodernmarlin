@@ -1,9 +1,0 @@
-{
-  "to": "C:\\Users\\Philip\\Documents\\MarlinGUI\\PB\\Marlin\\.mct.bak\\tags\\1.1.9\\2018-11-02 24-58-43",
-  "root": "C:/Users/Philip/Documents/MarlinGUI/PB/Marlin",
-  "files": [
-    "C:\\Users\\Philip\\Documents\\MarlinGUI\\PB\\Marlin\\Marlin\\Configuration.h",
-    "C:\\Users\\Philip\\Documents\\MarlinGUI\\PB\\Marlin\\Marlin\\Configuration_adv.h"
-  ],
-  "message": "Simple Metal HB\n\nSteps { 80, 80, 2020, 96 }\nFixed FAN2 Auto temp set to pin 44\nFinal Release\nNo Heated Bed\nXYZ Steppers are inverted for the printrbot play\nX Home -1\nY Home 1\nZ Home -1\nExtruder Thermistor (1) EPCOS100k\nHeated Bed (5) ATC 104GT-2\nDAC_Motor Current {70,70,70,70}\nDAC_Motor Current {70,70,70,70}\n\nSet Stepper Current for your Printer\nM909\nREAD: echo:Stepper current values in % (Amps):\nStepper current values in % (Amps):\nREAD: echo: X:60.00 (16581.82) Y:65.00 (36581.82) Z:60.00 (16581.82) E:65.00 (36581.82)\nX:60.00 (16581.82) Y:65.00 (36581.82) Z:60.00 (16581.82) E:65.00 (36581.82)\n\nM907 X50 sets the X-axis motor current to 50% of max possible\n\nM909 Read Motor current Values\nM907 Set Current Value\nM910 Store Stepper Current Values\n"
-}

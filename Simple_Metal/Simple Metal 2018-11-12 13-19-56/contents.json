@@ -1,9 +1,0 @@
-{
-  "to": "C:\\Users\\Dell\\Documents\\MarlinGUI\\Simple V2\\Marlin\\.mct.bak\\tags\\1.1.9\\2018-11-12 13-19-56",
-  "root": "C:/Users/Dell/Documents/MarlinGUI/Simple V2/Marlin",
-  "files": [
-    "C:\\Users\\Dell\\Documents\\MarlinGUI\\Simple V2\\Marlin\\Marlin\\Configuration.h",
-    "C:\\Users\\Dell\\Documents\\MarlinGUI\\Simple V2\\Marlin\\Marlin\\Configuration_adv.h"
-  ],
-  "message": "configured for non inverting probe on simple metal with heated bed"
-}

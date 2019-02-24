@@ -1,9 +1,0 @@
-{
-  "to": "C:\\Users\\Philip\\Documents\\MarlinGUI\\PB\\Marlin\\.mct.bak\\tags\\1.1.9\\2018-11-02 24-47-23",
-  "root": "C:/Users/Philip/Documents/MarlinGUI/PB/Marlin",
-  "files": [
-    "C:\\Users\\Philip\\Documents\\MarlinGUI\\PB\\Marlin\\Marlin\\Configuration.h",
-    "C:\\Users\\Philip\\Documents\\MarlinGUI\\PB\\Marlin\\Marlin\\Configuration_adv.h"
-  ],
-  "message": "Steps { 80, 80, 2020, 96 }\nFixed FAN2 Auto temp set to pin 44\nFinal Release\nNo Heated Bed\nXYZ Steppers are inverted for the printrbot play\nX Home -1\nY Home 1\nZ Home -1\nExtruder Thermistor (1) EPCOS100k\nHeated Bed (5) ATC 104GT-2"
-}
