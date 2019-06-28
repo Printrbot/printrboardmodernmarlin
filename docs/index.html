@@ -15,48 +15,27 @@
     </style> 
 </head>
 <body>
- <div id="app"></div>
+<script>
+
+  <div id="app"></div>
   <script>
+
+ window.$docsify = {
+  // load from _sidebar.md
+  loadSidebar: true,
+
+  // load from summary.md
+  loadSidebar: 'summary.md'
+},
+
+window.$docsify = {
+  repo: 'docsifyjs/docsify',
+  // or
+  repo: 'https://github.com/docsifyjs/docsify/'
+};
+
     window.$docsify = {
-      alias: {
-        '.*?/changelog': 'https://raw.githubusercontent.com/docsifyjs/docsify/master/CHANGELOG',
-        '/.*/_navbar.md': '/_navbar.md',
-        '/zh-cn/(.*)': 'https://raw.githubusercontent.com/docsifyjs/docs-zh/master/$1',
-        '/de-de/(.*)': 'https://raw.githubusercontent.com/docsifyjs/docs-de/master/$1',
-        '/ru/(.*)': 'https://raw.githubusercontent.com/docsifyjs/docs-ru/master/$1',
-        '/es/(.*)': 'https://raw.githubusercontent.com/docsifyjs/docs-es/master/$1'
-      },
-      notFoundPage: '_404.html',
-      auto2top: true,
-      basePath: '/docs/',
-      executeScript: true,
-      loadNavbar: true,
-      loadSidebar: true,
-      coverpage: true,
-      name: 'docsify',
-      subMaxLevel: 2,
-      mergeNavbar: true,
-      formatUpdated: '{MM}/{DD} {HH}:{mm}',
-      plugins: [
-        function (hook, vm) {
-          hook.beforeEach(function (html) {
-            var url
-            if (/githubusercontent\.com/.test(vm.route.file)) {
-              url = vm.route.file
-                .replace('raw.githubusercontent.com', 'github.com')
-                .replace(/\/master/, '/blob/master')
-            } else {
-              url = 'https://github.com/docsifyjs/docsify/blob/master/' + vm.route.file
-            }
-            var editHtml = '[:memo: Edit Document](' + url + ')\n'
-            return editHtml
-              + html
-              + '\n\n----\n\n'
-              + 'Last modified {docsify-updated} '
-              + editHtml
-          })
-        }
-      ]
+      //...
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
