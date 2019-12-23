@@ -22,6 +22,10 @@ If your board is marked anything lower then RevF: Use Firmware Marked RevD, RevB
 	Board Version|Firmware Version |Model |Build Size|Notes
 	RevF-          0.8_           PlayHB_200x100_Inverted_Probe
 
+##### Downloading Firmware
+Make sure to download repo as zip, otherwise right clicking and saving individual hex files will result in downloading an html file which will result in errors when flashing. 
+![how to download firmware](download_repo_as_zip.jpg)
+
 
 ##### Change Log
 	
