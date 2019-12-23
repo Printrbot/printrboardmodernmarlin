@@ -24,7 +24,7 @@ If your board is marked anything lower then RevF: Use Firmware Marked RevD, RevB
 
 ##### Downloading Firmware
 Make sure to download repo as zip, otherwise right clicking and saving individual hex files will result in downloading an html file which will result in errors when flashing. 
-![how to download firmware](download_repo_as_zip.jpg)
+![how to download firmware](/images/download_repo_as_zip.jpg)
 
 
 ##### Change Log
@@ -43,7 +43,7 @@ Make sure to download repo as zip, otherwise right clicking and saving individua
 [Marlin 1.1.9 first time bed leveling guide - after flashing](http://marlinfw.org/docs/features/auto_bed_leveling.html#first-time-bed-leveling)
 
 ##### Printrbot Play 0.2mm layer height Cura 3.5.1
-![Benchy Play 0.2mm layer height](benchythumbnail.JPG)
+![Benchy Play 0.2mm layer height](/images/benchythumbnail.JPG)
 
     
 ##### This isn't your grandma's 3D printer, please make sure your inductive probe is adjusted properly
@@ -86,7 +86,7 @@ Make sure to download repo as zip, otherwise right clicking and saving individua
 * M290 and LCD menu item to move the z axes by tiny increments without changing the current position values. This feature is used primarily to adjust the Z axis in the first layer of a print in real-time.
     * Replaces the need to set the Z-offset multiple times using M212 before printing.
     * Easily adjust your offset by adding custom buttons to octoprint using Custom Control Editor Plugin
-   ![customcontrol](images/customcontroleditor.jpg)
+   ![customcontrol](/images/customcontroleditor.jpg)
 
     	 Enter the increment you wish to move, send the command repeatedly
    	 M290 Z0.01 ;moves away from build plate
@@ -132,10 +132,10 @@ Make sure to download repo as zip, otherwise right clicking and saving individua
    [Expansion Header pinout diagrams](http://blog.think3dprint3d.com/2012/07/panelolu-with-printrboard.html)
   
   Neopixel Pins
-![pins](images/neopixel_pinout.JPG)
+![pins](/images/neopixel_pinout.JPG)
 
 EXP2 Pinout
-![pins2](images/Printrboard-pinout-EXP2.jpg)
+![pins2](/images/Printrboard-pinout-EXP2.jpg)
 
    Using Printrboard without an LCD - all commands available 
    [LCD Menu gcode equivalent](http://marlinfw.org/docs/features/lcd_menu.html)
