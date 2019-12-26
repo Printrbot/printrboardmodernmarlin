@@ -21,6 +21,11 @@ If your board is marked anything lower then RevF: Use Firmware Marked RevD, RevB
 	Example
 	Board Version|Firmware Version |Model |Build Size|Notes
 	RevF-          0.8_           PlayHB_200x100_Inverted_Probe
+	
+##### If you're compiling your own firmare use these thermistor options
+	Hotend Thermistor - Ubis 13 (Ceramic Hotend) or Ubis 13s use: 1 EPCOS 100k
+	Heated Bed Thermistor table: 7
+
 
 ##### Downloading Firmware
 Make sure to download repo as zip, otherwise right clicking and saving individual hex files will result in downloading an html file which will result in errors when flashing. 
